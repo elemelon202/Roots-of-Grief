@@ -14,14 +14,17 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header></header>
+    <header>
       <nav class="nav collapsible">
-        <a href="/"><img src="images/logo.svg" alt="" /></a>
+        <a href="/"
+          ><img class="nav__image" src="images/Vector_2.svg" alt=""
+        /></a>
         <svg class="icon icon--white nav__toggler">
           <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
         <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="#">Tour</a></li>
+          <li class="nav__item"><a href="#bio">Bio</a></li>
+          <li class="nav__item"><a href="#tour">Tour</a></li>
           <li class="nav__item"><a href="#">Music</a></li>
           <li class="nav__item"><a href="#">Store</a></li>
         </ul>
@@ -41,7 +44,7 @@
         <img class="hero__image" src="images/origins_cover.png" alt="" />
       </div>
     </section>
-    <section class="block container">
+    <section class="block container" id="bio">
       <header class="block__header">
         <h2>Bio</h2>
         <p class="bio">
@@ -77,9 +80,9 @@
         </button>
       </header>
     </section>
-    <section class="block block block--dark block--skewed-right tour">
+    <section class="block block block--dark block--skewed-right tour" id="tour">
       <header class="block__header">
-        <h2 style="color: #ccc;">Tour</h2>
+        <h2 style="color: #ccc">Tour</h2>
         <ul class="list block-tour__location">
           <li>
             <span class="badge tour__badge">Upcoming</span>
@@ -95,6 +98,7 @@
         <button class="btn btn--accent">Submit</button>
       </div>
     </section>
+
     <script src="js/main.js"></script>
   </body>
 </html>

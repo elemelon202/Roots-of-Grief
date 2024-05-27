@@ -502,6 +502,9 @@ a {
     max-height: 100vh;
     opacity: 1;
 }
+#more {
+    display: none;
+}
 
 .block {
     --padding-veritcal: 6rem;
@@ -630,4 +633,8 @@ a {
     .block-tour__location {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
+}
+
+.bio {
+    text-align: center;
 }

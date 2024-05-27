@@ -537,7 +537,9 @@ a {
     margin: 0 auto;
 }
 
+
 .nav {
+    
     background: #000;
     display: flex;
     justify-content: space-between;
@@ -615,13 +617,22 @@ a {
         align-self: center;
     }
 }
+
+.tour {
+    background-color: #0a300c;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+}
+
 .tour__input {
-    box-shadow: 0 0 30px 20px #e6ebee;
-    border: 0;
+    
+    border: none;
     margin: 4rem auto;
     max-width: 670px;
+    background: none;
+    
 }
 .block-tour__location {
+    color: var(--color-border);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     font-size: 2rem;
@@ -637,4 +648,5 @@ a {
 
 .bio {
     text-align: center;
+    color: var(--color-secondary);
 }

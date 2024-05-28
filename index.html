@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -26,13 +27,14 @@
           <li class="nav__item"><a href="#bio">Bio</a></li>
           <li class="nav__item"><a href="#tour">Tour</a></li>
           <li class="nav__item"><a href="#">Music</a></li>
+          <li class="nav__item"><a href="#gallery">Gallery</a></li>
           <li class="nav__item"><a href="#">Store</a></li>
         </ul>
       </nav>
     </header>
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--cols-2">
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="fade-right">
           <h1 class="block__heading">Roots Of Grief</h1>
           <p class="hero__tagline">New album "Origins" out now</p>
           <a
@@ -41,10 +43,15 @@
             >Listen</a
           >
         </header>
-        <img class="hero__image" src="images/origins_cover.png" alt="" />
+        <img
+          class="hero__image"
+          src="images/origins_cover.png"
+          alt=""
+          data-aos="fade-left"
+        />
       </div>
     </section>
-    <section class="block container" id="bio">
+    <section class="block container" id="bio" data-aos="fade-up">
       <header class="block__header">
         <h2>Bio</h2>
         <p class="bio">
@@ -80,7 +87,11 @@
         </button>
       </header>
     </section>
-    <section class="block block block--dark block--skewed-right tour" id="tour">
+    <section
+      class="block block block--dark block--skewed-right tour"
+      id="tour"
+      data-aos="fade-up"
+    >
       <header class="block__header">
         <h2 style="color: #ccc">Tour</h2>
         <ul class="list block-tour__location">
@@ -98,6 +109,34 @@
         <button class="btn btn--accent">Submit</button>
       </div>
     </section>
+    <section class="gallery block block--dark" id="gallery">
+      <header class="block__header">
+        <h2 class="gallery__header">Gallery</h2>
+      </header>
+      <div class="grid grid--cols-3">
+        <div class="gallery__item">
+          <img src="images/kenta_close1.jpeg" alt="" data-aos="fade-up" />
+        </div>
+        <div class="gallery__item">
+          <img src="images/rustam_dark.jpeg" alt="" data-aos="fade-up" />
+        </div>
+        <div class="gallery__item">
+          <img src="images/band_stage2.jpeg" alt="" data-aos="fade-up" />
+        </div>
+      </div>
+      <div class="grid grid--cols-3">
+        <div class="gallery__item">
+          <img src="images/band3.jpeg" alt="" data-aos="fade-up" />
+        </div>
+        <div class="gallery__item">
+          <img src="images/rustam2.jpeg" alt="" data-aos="fade-up" />
+        </div>
+        <div class="gallery__item">
+          <img src="images/kenta_close2.jpeg" alt="" data-aos="fade-up" />
+        </div>
+      </div>
+    </section>
+
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
@@ -134,5 +173,9 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

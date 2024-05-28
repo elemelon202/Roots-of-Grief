@@ -2,7 +2,7 @@
     --color-primary: #8ecccc;
     --color-secondary: #50717b;
     --color-accent: #3a4042;
-    --color-headings: #212121;
+    --color-headings: #908e8e;
     --color-body: #918ca4;
     --color-body-darker: #5c5577;
     --color-border: #ccc;
@@ -257,6 +257,7 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 1rem;
+
 }
 
 .input-group .btn {
@@ -400,6 +401,7 @@ a {
 @media screen and (min-width: 768px) {
     .grid--cols-2 {
         grid-template-columns: 1fr 1fr;
+        
     }
 }
 @media screen and (min-width: 1024px) {
@@ -623,7 +625,7 @@ a {
 }
 
 .tour {
-    background-color: #0a300c;
+    background-color: #051606;
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
 }
 
@@ -752,4 +754,16 @@ a {
     color: #125688;
     background: #fefefe;
     border-color: #125688;
+  }
+
+  .gallery .block .block--dark {
+    padding-top: 10px;
+  }
+  .gallery__header {
+    color: #fff;
+    margin-top: none;
+    padding-bottom: 6rem;
+  }
+  .gallery__item> img {
+    max-width: 100%;
   }

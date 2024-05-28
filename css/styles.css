@@ -680,10 +680,12 @@ a {
     font-size: 1.5625rem;
     font-weight: normal;
     line-height: 2em;
-    border-radius: 1.6875rem;
+    border-radius: 0.5rem;
     transition: all 0.5s ease;
     margin-right: 0.25rem;
     margin-bottom: 0.25rem;
+    justify-content: center;
+    align-items: center;
   }
   
   .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
@@ -698,7 +700,10 @@ a {
   
   .rounded-social-buttons .social-button.facebook {
     background: #3b5998;
+    
   }
+
+  
   
   .rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
     color: #3b5998;

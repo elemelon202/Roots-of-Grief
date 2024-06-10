@@ -769,6 +769,7 @@ a {
     margin-top: none;
     padding-bottom: 6rem;
   }
-  .gallery__item> img {
+  .gallery__item img {
     max-width: 100%;
   }
+ 

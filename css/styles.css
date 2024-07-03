@@ -511,6 +511,7 @@ a {
 .block {
     --padding-veritcal: 6rem;
     padding: var(--padding-veritcal) 2rem;
+    
 }
 .block__header {
     text-align: center;
@@ -526,6 +527,7 @@ a {
     color: #fff;
 }
 .block--skewed-right {
+    
     padding-bottom: calc(var(--padding-veritcal) + 4rem);
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
@@ -610,7 +612,7 @@ a {
 .hero__image {
     overflow: hidden;
     position: relative;
-    width: 100%;
+    max-width: 100%;
     margin-top: 30px;
 }
 
@@ -622,6 +624,21 @@ a {
         text-align: left;
         align-self: center;
     }
+}
+.header-image-block {
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+}
+
+.header-image {
+    
+    max-width: 100%;
+    height: auto;
+    
+}
+.header-image-skewed-right {
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .tour {

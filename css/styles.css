@@ -411,12 +411,14 @@ a {
 }
 
 .testimonial {
+    
     padding: 3rem;
     overflow: visible;
 }
 
 .testimonial__image{
     position: relative;
+    
 }
 .testimonial__image > img{
     width: 100%;

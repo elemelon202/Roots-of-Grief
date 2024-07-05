@@ -21,6 +21,7 @@ body {
     color: var(--color-body);
     font-size: 2.4rem;
     line-height: 1.5;
+    background-color: #000;
 } 
 
 h1, h2, h3 {
@@ -270,8 +271,8 @@ a {
 }
 
 .card {
-    border-radius: 7px;
-    box-shadow: 0 0 20px 10px #f3f3f3;
+   
+    
     overflow: hidden;
 }
 .card__header, 
@@ -414,10 +415,12 @@ a {
     
     padding: 3rem;
     overflow: visible;
+    background-color: #000;
 }
 
 .testimonial__image{
     position: relative;
+    padding: 0.1rem;
     
 }
 .testimonial__image > img{
@@ -640,7 +643,7 @@ a {
     
 }
 .header-image-skewed-right {
-    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 20%, 100% 10%, 100% 90%, 0% 100%);
 }
 
 .tour {

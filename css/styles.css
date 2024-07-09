@@ -794,4 +794,15 @@ a {
   .gallery__item img {
     max-width: 100%;
   }
+
+  .show_item {
+    display: flex;
+    justify-items: left;
+  }
+  .show_list {
+    list-style-type: none;
+  }
+  .show_item.show_list.show_name {
+    font-weight: 700;
+  }
  
